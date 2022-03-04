@@ -3,9 +3,9 @@
 # for more: https://github.com/randy3k/radian
 
 ## color schemes (https://help.farbox.com/pygments.html)
-# options(radian.color_scheme = "native") # testing
-options(radian.color_scheme = "fruity") # dark background
-# options(radian.color_scheme = "murphy") # light background
+options(radian.color_scheme = "fruity")
+# "fruity" for dark background
+# "murphy" for light background
 
 ## pop up completion while typing
 options(radian.complete_while_typing = FALSE)
@@ -13,30 +13,33 @@ options(radian.complete_while_typing = FALSE)
 ## insert new line between prompts
 options(radian.insert_new_line = FALSE)
 
+# auto match brackets and quotes
+options(radian.auto_match = TRUE)
+
 # auto indentation for new line and curly braces
 options(radian.auto_indentation = FALSE)
 
-## when using history search (ctrl-r/ctrl-s in emacs mode), 
+## when using history search (ctrl-r/ctrl-s in emacs mode),
 ## do not show duplicate results
 options(radian.history_search_no_duplicates = FALSE)
 
 ## custom prompt for different modes
 options(
-  radian.prompt = "\033[0;34mr ▶\033[0m ", 
-  radian.shell_prompt = "\033[0;31m$ ▶\033[0m ", 
+  radian.prompt = "\033[0;34m[r] ▶\033[0m ",
+  radian.shell_prompt = "\033[0;31m[$] ▶\033[0m ",
   radian.browse_prompt = "\033[0;33mBrowse[{}]▶\033[0m "
 )
 
-# allows user defined shortcuts, 
+# allows user defined shortcuts,
 # these keys should be escaped when send through the terminal.
-# In the following example, 
-#   `esc` + `-` sends `<-` 
+# In the following example,
+#   `esc` + `-` sends `<-`
 #   `esc` + `m` sends `%>%`
-# Note that in some terminals, 
+# Note that in some terminals,
 #   you could mark `alt` as `escape` so you could use `alt` + `-` instead.
 options(
   radian.escape_key_map = list(
-    list(key = "-", value = "<-"), 
+    list(key = "-", value = "<-"),
     list(key = "m", value = "%>%")
-  ) 
+  )
 )
