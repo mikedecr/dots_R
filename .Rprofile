@@ -1,13 +1,11 @@
 # RPROFILE: controls hidden R variables
 # michael decrescenzo
 
-# For global profile: 
-# set non-essential functionality only
+# For global profile: set non-essential functionality only.
 
-# For project profiles: 
-# profiles may alter functionality 
-# but they MUST be bundled with project repo
-# source ~/.rprofile
+# Project-specific .Rprofile files may alter functionality,
+#   but those should be sourced by project scripts 
+#   to ensure dependencies.
 
 
 # ---- Prompt -----------------------
@@ -25,6 +23,6 @@ options(repos = repo_urls)
 
 # --- Colored terminal output -----------------------
 
-# we used to hard-code colors in here.
-# but we want to do that, 
-# it should be a modular tool w/r/t terminal theme colors
+# we used to hard-code colors in here,
+#   but if we still want to do that, 
+#   it should be a modular tool w/r/t terminal theme colors.
