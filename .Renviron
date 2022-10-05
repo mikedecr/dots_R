@@ -1,5 +1,0 @@
-# supports Nvim-R without affecting R functionality
-# but requires a local pkg install + symlink
-# see <https://github.com/jalvesaq/Nvim-R/issues/445#issuecomment-705735430>
-RENV_CONFIG_EXTERNAL_LIBRARIES="~/R/nvimcomlib"
-
