@@ -14,7 +14,7 @@ options(radian.complete_while_typing = FALSE)
 options(radian.insert_new_line = FALSE)
 
 # auto match brackets and quotes
-options(radian.auto_match = TRUE)
+options(radian.auto_match = FALSE)
 
 # auto indentation for new line and curly braces
 options(radian.auto_indentation = FALSE)
