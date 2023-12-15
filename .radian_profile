@@ -3,7 +3,7 @@
 # for more: https://github.com/randy3k/radian
 
 ## color schemes (https://help.farbox.com/pygments.html)
-options(radian.color_scheme = "fruity")
+options(radian.color_scheme = "vim")
 # "fruity" for dark background
 # "murphy" for light background
 
